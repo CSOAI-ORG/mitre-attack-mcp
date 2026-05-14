@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/mitre-attack-mcp",
+  "version": "1.0.0",
+  "description": "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique cor...",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/mitre-attack-mcp",
+    "source": "https://github.com/CSOAI-ORG/mitre-attack-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mitre-attack-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# MITRE ATT&CK Mapper MCP - Auto-trigger Rules
+
+When the user asks about MITRE ATT&CK, tactics, techniques, threat intel, STIX, IOC, use mitre-attack-mcp tools:
+
+- **query_technique**: Query ATT&CK technique by ID (Txxxx) or name
+- **list_tactics**: All 14 enterprise tactics (TA0001-TA0040+)
+- **map_incident**: Map incident IOCs/behaviors to ATT&CK techniques
+- **group_threat_actor**: Threat actor groups (G-codes) using a technique
+- **mitigation_lookup**: Mitigations (M-codes) for a technique
+
+Install: `pip install mitre-attack-mcp`
+
+By MEOK AI Labs — industry governance MCP. Pairs with meok-attestation-api for signed compliance certs.

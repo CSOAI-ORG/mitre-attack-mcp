@@ -1,0 +1,36 @@
+# mitre-attack-mcp
+# MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique correlation for cyber defenders.
+
+## Install
+```bash
+pip install mitre-attack-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label + on-premise.
+
+## Tools (5)
+
+### `query_technique(query, api_key)`
+Query ATT&CK technique by ID (Txxxx) or name
+
+### `list_tactics(query, api_key)`
+All 14 enterprise tactics (TA0001-TA0040+)
+
+### `map_incident(query, api_key)`
+Map incident IOCs/behaviors to ATT&CK techniques
+
+### `group_threat_actor(query, api_key)`
+Threat actor groups (G-codes) using a technique
+
+### `mitigation_lookup(query, api_key)`
+Mitigations (M-codes) for a technique
+
+## Pairs with
+- `meok-attestation-api` — HMAC signing for compliance certs
+- `meok-attestation-verify` — public verification
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT
