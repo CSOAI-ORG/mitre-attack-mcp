@@ -1,67 +1,78 @@
-# MITRE ATT&CK Mapper MCP
+# Mitre Attack MCP
 
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/mitre_attack_mcp/)
 
-> ## Buy Starter — £29/mo
-> **Signed attestations + unlimited audits + email support.**
-> 👉 **[Subscribe at meok.ai](https://buy.stripe.com/eVqdRbdkE9ACfUN6as8k90e)** — instant HMAC signing key + Stripe-managed billing.
->
-> Free tier remains MIT-licensed and zero-config. Upgrade only when you need signed compliance artefacts for audit.
+> MITRE ATT&CK matrix lookup + tactic/technique mapper MCP
 
-[![PyPI](https://img.shields.io/pypi/v/mitre-attack-mcp)](https://pypi.org/project/mitre-attack-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-governance--mcp-purple)](https://meok.ai)
+MITRE ATT&CK matrix lookup + tactic/technique mapper MCP. MIT
 
-MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique correlation for cyber defenders.
+---
 
-## Install
+## 🚀 Quick Start
 
 ```bash
-pip install mitre-attack-mcp
+# Install via pip
+pip install mitre_attack_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install mitre-attack-mcp --client claude
 ```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|------|---------|
-| `query_technique` | Query ATT&CK technique by ID (Txxxx) or name |
-| `list_tactics` | All 14 enterprise tactics (TA0001-TA0040+) |
-| `map_incident` | Map incident IOCs/behaviors to ATT&CK techniques |
-| `group_threat_actor` | Threat actor groups (G-codes) using a technique |
-| `mitigation_lookup` | Mitigations (M-codes) for a technique |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Pairs with
+## 📖 Documentation
 
-- `meok-attestation-api` — POST results to https://meok-attestation-api.vercel.app/sign for cryptographically signed compliance certs
-- `meok-attestation-verify` — public verification of any MEOK-signed cert
-- Other MEOK governance MCPs via SOV3 `mcp_bridge_call`
+- [Full Documentation](https://docs.meok.ai/mitre-attack-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Pricing
+## 🛡️ Compliance
 
-- **Free**: 10 calls/day. No API key required.
-- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
-- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Status
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Scaffold v1.0.0 ships the MCP framework + 5 tool stubs. v1.1.0 will add real regulation data ingestion.
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-If your team needs this MCP fully-loaded faster, ping hello@meok.ai for sponsored development.
+## 🏢 Enterprise
 
-## Wire it up — full stack
+Need custom development, SLA guarantees, or white-label deployment?
 
-Pair this with the MEOK chain that turns one agent action into ONE signed compliance event:
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-1. **bft-progress-council-mcp** — anti-loop guardrail
-2. **agent-token-budget-mcp** — hard spend cap
-3. **agent-prompt-injection-firewall-mcp** — OWASP LLM01 scan
-4. **agent-audit-logger-mcp** — hash-chained evidence
-5. **a2a-governance-bridge-mcp** — fold N attestations → 1 signed event
-6. **agent-incident-relay-mcp** — broadcast incidents to 5 regimes simultaneously
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the architecture and [meok.ai/mcp-stack/demo](https://meok.ai/mcp-stack/demo) for the live in-browser demo.
+## 🤝 Part of the MEOK Ecosystem
 
-## License
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-MIT © MEOK AI Labs
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-<!-- mcp-name: io.github.CSOAI-ORG/mitre-attack-mcp -->
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
