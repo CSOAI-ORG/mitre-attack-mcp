@@ -1,0 +1,68 @@
+{
+  "name": "mitre-attack-mcp",
+  "description": "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique cor...",
+  "url": "https://proofof.ai/scorecard/mitre-attack-mcp.html",
+  "version": "1.0.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "query_technique",
+      "name": "Query Technique",
+      "description": "query_technique via mitre-attack-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_tactics",
+      "name": "List Tactics",
+      "description": "list_tactics via mitre-attack-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "map_incident",
+      "name": "Map Incident",
+      "description": "map_incident via mitre-attack-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "group_threat_actor",
+      "name": "Group Threat Actor",
+      "description": "group_threat_actor via mitre-attack-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "mitigation_lookup",
+      "name": "Mitigation Lookup",
+      "description": "mitigation_lookup via mitre-attack-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "mitre-attack-mcp",
+    "description": "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique cor...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "mitre-attack-mcp"
+      }
+    ],
+    "capabilities": [
+      "query_technique",
+      "list_tactics",
+      "map_incident",
+      "group_threat_actor",
+      "mitigation_lookup"
+    ]
+  }
+}
