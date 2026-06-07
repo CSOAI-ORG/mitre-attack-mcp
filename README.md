@@ -1,4 +1,7 @@
 # Mitre Attack MCP
+mcp-name: io.github.CSOAI-ORG/mitre-attack-mcp
+
+# MITRE ATT&CK Mapper MCP
 
 > **⚖️ Built by [MEOK AI Labs](https://meok.ai) / [CSOAI](https://csoai.org).** Need this applied to _your_ system fast? Book a 30-min Founder Office Hour (£29) → **https://meok.ai/work** · Full governance platform → **https://meok.ai**
 
@@ -6,6 +9,11 @@
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/mitre_attack_mcp/)
+> ## Buy Starter — £29/mo
+> **Signed attestations + unlimited audits + email support.**
+> 👉 **[Subscribe at meok.ai](https://buy.stripe.com/aFaeVfeoIbIKcIBdCU8k90S)** — instant HMAC signing key + Stripe-managed billing.
+>
+> Free tier remains MIT-licensed and zero-config. Upgrade only when you need signed compliance artefacts for audit.
 
 > MITRE ATT&CK matrix lookup + tactic/technique mapper MCP
 
@@ -40,6 +48,9 @@ npx -y @smithery/cli@latest install mitre-attack-mcp --client claude
 ## 🛡️ Compliance
 
 This MCP server is built with **EU AI Act compliance** built-in:
+- **Free**: 10 calls/day. No API key required.
+- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/aFaeVfeoIbIKcIBdCU8k90S)
+- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
 
 - ✅ Article 9 — Risk Management System
 - ✅ Article 13 — Transparency & Instructions for Use
@@ -78,3 +89,44 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+<!-- mcp-name: io.github.CSOAI-ORG/mitre-attack-mcp -->
+
+<!-- BUY-LADDER:START -->
+
+## 💸 Try MEOK in 30 seconds — instant buy ladder
+
+| Tier | Price | What you get | Stripe |
+|---|---|---|---|
+| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
+| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
+| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+
+> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
+> Verify any signed report at <https://meok.ai/verify>.
+
+<!-- BUY-LADDER:END -->
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "mitre-attack-mcp": {
+      "command": "uvx",
+      "args": ["mitre-attack-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install mitre-attack-mcp` then run the `mitre-attack-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `query_technique` to …"
+- "Use `list_tactics` to …"
+- "Use `map_incident` to …"

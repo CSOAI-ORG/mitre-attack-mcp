@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mitre-attack-mcp"
-version = "1.0.0"
+readme = "README.md"
+version = "1.0.3"
 description = "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique correlation for cyber defenders."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -20,7 +21,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai-labs/mitre-attack-mcp"
+Repository = "https://github.com/CSOAI-ORG/mitre-attack-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

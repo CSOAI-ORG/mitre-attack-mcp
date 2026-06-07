@@ -1,0 +1,28 @@
+name: mitre-attack-mcp
+description: 'MCP server: mitre-attack-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/mitre-attack-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: query_technique
+  description: Query ATT&CK technique by ID (Txxxx) or name
+- name: list_tactics
+  description: All 14 enterprise tactics (TA0001-TA0040+)
+- name: map_incident
+  description: Map incident IOCs/behaviors to ATT&CK techniques
+- name: group_threat_actor
+  description: Threat actor groups (G-codes) using a technique
+- name: mitigation_lookup
+  description: Mitigations (M-codes) for a technique
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

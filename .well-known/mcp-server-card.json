@@ -1,0 +1,28 @@
+{
+  "name": "mitre-attack-mcp",
+  "title": "Mitre Attack Mcp",
+  "description": "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique correlation for cyber defenders.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "query_technique"
+    },
+    {
+      "name": "list_tactics"
+    },
+    {
+      "name": "map_incident"
+    },
+    {
+      "name": "group_threat_actor"
+    },
+    {
+      "name": "mitigation_lookup"
+    }
+  ]
+}
