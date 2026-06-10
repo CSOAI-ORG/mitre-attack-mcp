@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mitre-attack-mcp": {
+      "command": "uvx",
+      "args": [
+        "mitre-attack-mcp"
+      ]
+    }
+  }
+}
