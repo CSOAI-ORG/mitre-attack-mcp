@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "mitre-attack-mcp"
 readme = "README.md"
-version = "1.0.3"
+version = "1.0.4"
 description = "MITRE ATT&CK matrix lookup, tactic/technique/sub-technique mapper, and incident-to-technique correlation for cyber defenders."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
